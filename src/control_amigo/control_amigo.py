@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-#import roslib; roslib.load_manifest('control_amigo')
+import roslib; roslib.load_manifest('control_amigo')
 import rospy
 
 from geometry_msgs.msg import Twist
@@ -27,20 +27,19 @@ baseTrajectory = [
 #forward 1 repeat <> 10cm
 		#	  time, x, z
 		#Move(x, 0, -1),
-        Move(3, 1, 1),
-		Move(2, 1, 0),
-		Move(3, 1, -1),
-		Move(2, 1, 0),
+        Move(6, 1, 1),
+		Move(3, 1, 0),
+		Move(6, 1, -1),
+		Move(3, 1, 0),
 		Move(5, 0, 0), #stop
 
 		Move(7, -1, 0), #backwards
-		Move(4, -1, 1),
-		Move(4, 1, 0),
-		Move(2, -1, -1),
-		Move(1, -1, 0),
+		Move(6, -1, 1),
+		Move(3, 1, 0),
+		Move(6, -1, -1),
 
-		Move(10, 0, 0), #stop
-		Move(4, 1, 0),
+		Move(5, 0, 0), #stop
+		Move(7, 1, 0),
 ]
 
 currentMove = -1
