@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package>
+  <name>control_amigo</name>
+  <version>0.6.0</version>
+  <description>Control amigo robots.</description>
+
+  <maintainer email="namniart@gmail.com">MY</maintainer>
+
+  <license>BSD</license>
+
+  <url type="website">todo</url>
+
+  <author>MY</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <run_depend>geometry_msgs</run_depend>
+  <run_depend>rospy</run_depend>
+</package>
